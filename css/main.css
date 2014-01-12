@@ -25,9 +25,11 @@ p {
 .header-container {
     border-bottom: 5px solid #000000;
     background: #808000;
-    height: 6.75em;
+    height: 5em;
 }
 
+/* ==== Aside settings ====
+*/
 .main aside {
     background: #000080;
     color: white;
@@ -47,14 +49,16 @@ p {
   padding-right: 4em;
 }
 
+
 .title {
   margin-left: 1%;
   color: white;
 }
 
+/* ==== Date box ====
+*/
 .date-box {
   float: left;
-  background-color: #808000;
   color: white;
   width: 6em;
   height: 6em;
@@ -73,24 +77,35 @@ p {
   margin: -.3em 0 0 .15em;
 }
 
+.grad {
+  background-color: #808000; /* fallback color if gradients are not supported */
+  background-image: -webkit-linear-gradient(top, #a6a6a6, #808000); /* For Chrome and Safari */
+  background-image:    -moz-linear-gradient(top, #a6a6a6, #808000); /* For old Fx (3.6 to 15) */
+  background-image:     -ms-linear-gradient(top, #a6a6a6, #808000); /* For pre-releases of IE 10*/
+  background-image:      -o-linear-gradient(top, #a6a6a6, #808000); /* For old Opera (11.1 to 12.0) */
+  background-image:         linear-gradient(to bottom, #a6a6a6, #808000); /* Standard syntax; must be last */
+}
+
+
+/* ==== Navigation bar ====
+*/
 nav ul {
-  margin: 0;
+  margin: .75em 0 0 0;
   padding-top: 0.85em;
   width: auto;
-   font-size: 1.4em;
  }
 
 nav ul li {
-  margin: 0 0 0.5em 0;
+  margin: 1.25em 0 0.5em 0;
   display: block;
   float: left;
   clear: none;
   margin-right: 2.5%;
-  background:#000080;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
-  padding:5px 10px 5px 10px;
+  background: #000080;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  padding: .25em 2em .25em 2em;
 }
 
 nav li:last-child {
@@ -101,8 +116,11 @@ nav ul li a {
   display: block;
   color: #FFF;
   text-decoration:none;
+  font-size: 95%;
 }
 
+/* ==== Search box ====
+*/
 .fieldcontainer {
   float: right;
   margin-top: -.5em;
@@ -115,9 +133,6 @@ nav ul li a {
   height: 1.5em;
 }
 
-
-
-
 /* remove placeholder on focus of Search field */
 input:focus::-webkit-input-placeholder { color:transparent; }
 input:focus::-moz-placeholder { color:transparent; }
@@ -129,8 +144,9 @@ article {
   border-radius: 4px;
   border: 1px black solid;
   background: white;
-  margin-bottom: 5em;
+  margin: 0 0 5em 3em;
 }
+
 .top-title {
   padding-left: 8em;
   padding-bottom: 2em;
@@ -205,12 +221,10 @@ img {
   }
 
   nav li {
-    margin: 0;
-    display: block;
     float: left;
-    width: 100%;
+    width: 50%;
     clear: none;
-    background:none;
+    padding: 0;
   }
 
 .main aside {
