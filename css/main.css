@@ -225,24 +225,25 @@ figcaption {
 
 /* Media settings */
 @media only screen and (max-width: 767px) {
-  nav, .fieldcontainer {
-    margin: 0 6% 0 0;
+
+
+  .fieldcontainer {
+    margin-top: 1em;
     padding: 0;
   }
 
   nav li {
-    float: left;
-    width: 50%;
-    clear: none;
-    padding: 0;
+    width: 75%;
   }
 
   .main aside {
     width: 70%;
+    margin-right: .5em;
+    margin-top: -5em;
   }
 
   .main article {
-    width: 95%;
+    width: 80%;
   }
 
   .top-title {
